@@ -1,0 +1,12 @@
+{
+  "name": "my first webhook via rest",
+  "url": "http://b467fc36a145.ngrok.io",
+  "events": [
+    "jira:issue_created",
+    "jira:issue_updated"
+  ],
+  "filters": {
+    "issue-related-events-section": "Project = JRA AND resolution = Fixed"
+  },
+  "excludeBody" : false
+}
